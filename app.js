@@ -23,8 +23,8 @@ hbs.registerPartials("views/partials");
 app.get("/", function (req, res) {
 
 });
-
-mongoose.connect("mongodb+srv://Prince123:Prince123@cluster1.flkt2.mongodb.net/MongoDB_Clone", function () {
+// mongoose.connect("mongodb://localhost/MongoDB_Clone", function () {
+mongoose.connect("mongodb+srv://Prince123:Prince123@cluster0.flkt2.mongodb.net/MongoDB_Clone", function () {
     console.log("Database is connected");
 
     //This is for the New Section
@@ -43,24 +43,22 @@ mongoose.connect("mongodb+srv://Prince123:Prince123@cluster1.flkt2.mongodb.net/M
     //     }
     // ]);
 
-    // This is the Footer Section Database.
+    //This is the Footer Section Database.
     // Footers.create([
     //     {
     //         brandName: 'MongoDBbackEnd',
     //         brandUrlIcon: "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-filled-tal-revivo.png"
     //     }
     // ]);
-
-
-
+    
 });
 
-let port = process.env.PORT;
+// let port = process.env.PORT;
 // if (port == null || port == "") {
 //     port = 3000;
 // }
 // app.listen(port);
 
-app.listen(port, function () {
+app.listen(3000, function () {
     console.log("Server has started Successfully");
 });

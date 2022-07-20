@@ -8,9 +8,9 @@ const routes = express.Router();
 // Write the routes code here.
 
 routes.get("/", async (req, res) => {
-    const navbar = await Navbars.findOne({ "_id": "62d707867c27a62242497dcc" });
-    const footer = await Footers.findOne({ "_id": "62d7083e98a8e8e15f01bd10" });
-    const news = await News.findOne({ "_id": "62d707867c27a62242497dcb" });
+    const navbar = await Navbars.findOne({ "_id": "62d842a7db6553aabfa9f7a0" });
+    const footer = await Footers.findOne({ "_id": "62d842a7db6553aabfa9f7a1" });
+    const news = await News.findOne({ "_id": "62d842a7db6553aabfa9f79f" });
     res.render("index", {
         navbar: navbar,
         footer: footer,
