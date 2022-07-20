@@ -56,10 +56,10 @@ mongoose.connect("mongodb+srv://Prince123:Prince123@cluster1.flkt2.mongodb.net/M
 });
 
 let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 3000;
-}
-app.listen(port);
+// if (port == null || port == "") {
+//     port = 3000;
+// }
+// app.listen(port);
 
 app.listen(port, function () {
     console.log("Server has started Successfully");
