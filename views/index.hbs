@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+</head>
+
+
+<body>
+
+
+
+    {{>news data=news}}
+    {{!-- This is the Navbar --}}
+    {{>navbar data=navbar}}
+
+
+    {{!-- This is Home Page --}}
+    <section class="home-page">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col p-5">
+                    <button class="btn btn-success">New</button>
+                    <a href="">View announcements from MongoDB World - Learn more > </a>
+                </div>
+
+                <div class="row p-5 div-center">
+
+                    <div class="col-md-4">
+                        <h1>Build faster.</h1>
+                        <h1>Build smarter.</h1>
+                        <div>
+                            <p>Get your ideas to market faster with a developer data platform built on the leading
+                                modern
+                                database. Support transactional, search, analytics, and mobile use cases while using a
+                                common query interface and the data model developers love.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img style="width:80%" src="img_download.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="col p-5">
+                    <button class="btn btn-success">Start Free</button>
+                    <a href="">Questions? Talk to us -</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    {{!-- This is the company Div --}}
+    <section class="company-div">
+        <div class="container-fluid text-center">
+            <div class="row p-5">
+                <div class="col-md-12">
+                    <p class="trust-text">TRUSTED BY THOUSANDS OF ORGANIZATIONS INCLUDING</p>
+                </div>
+                <div class="row">
+                    <img src="/public/image/bosh.png" alt="">
+                    <img src="/public/image/human.png" alt="">
+                    <img src="/public/image/cisco.png" alt="">
+                    <img src="/public/image/toyta.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="text-mid-section">
+        <div class="container fluid">
+            <div class="row pt-5 pb-5">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-8 text-mid-center">
+                        <h1>Working with data doesn't need to be hard</h1>
+                        <p>Our guiding principle is to help developers solve their data challenges. Here's what you can
+                            do
+                            with MongoDB.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="catlog">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 div-center div2">
+                    <div class="col-md-6">
+                        <img src="../public/image/build_faster.png" alt="">
+                        <h3 class="p-3">Build Faster</h3>
+                        <p>Ship and iterate 3-5x faster with our flexible document data model and a unified query
+                            interface
+                            for any use case.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 div-center div2">
+                    <div class="col-md-6">
+                        <img src="../public/image/Scale_further.png" alt="">
+                        <h3 class="p-3">Scale Further</h3>
+                        <p>Whether it's your first customer or 20 million users around the world, meet your performance
+                            SLAs
+                            in any environments.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4 div-center div2">
+                    <div class="col-md-6">
+                        <img src="../public/image/sleep_better.png" alt="">
+                        <h3 class="p-3">Sleep Better</h3>
+                        <p>Easily ensure high availability, protect data integrity, and meet the security and compliance
+                            standards for your mission-critical workloads.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- This is the middleware --}}
+    <section>
+        <div class="container-fluid text-center p-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Fully managed in the cloud</h1>
+                    <p>Start in seconds and scale to millions with our cloud services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- This is the Multi-cloud section --}}
+    <section>
+        <div class="container-fluid ">
+            <div class="row div-center  p-5">
+                <div class="col-lg-6 col-md-12 div3">
+                    <div class="col-md-6">
+                        <img src="" alt="">
+                        <p>ATLAS</p>
+                        <h3>Multi-cloud developer data platform</h3>
+                        <p>An integrated suite of cloud database services that allow you to address a wide variety
+                            of
+                            use cases, form transactional to analytical, from search to data visulizations.</p>
+                        <a href="">Learn more > </a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 div3">
+                    <img src="" alt="">
+                    <p>REALM</p>
+                    <h3>Work with data at the edge</h3>
+                    <p>A highly performant mobile database, with native edge-to-cloud data sync. Use Realm to build
+                        offline-first apps in a fraction of the time.</p>
+                    <a href="">Learn more > </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {{!-- This is the also middle --}}
+    <section>
+        <div class="container-fluid text-center">
+            <div class="row p-5">
+                <div class="col-md-12">
+                    <h2>Self-managed in any environment</h2>
+                    <p>Run MongoDB anywhere, from your laptop to your data center</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{!-- This is the another section below midlle --}}
+    <section>
+        <div class="container-fluid ">
+            <div class="row p-5 div-center">
+
+                <div class="col-lg-5 col-md-12 div3">
+                    <img src="" alt="">
+                    <p>COMMUNITY EDITION</p>
+                    <h3>Database software used by millions</h3>
+                    <p>Our distributed document database is where it all began. Free forever with seamless migration
+                        to Atlas.</p>
+                    <a href="">Learn more > </a>
+                </div>
+                <div class="col-lg-5 col-md-12 div3">
+                    <img src="" alt="">
+                    <p>ENTERPRISE ADVANCED</p>
+                    <h3>Enterprise software and support</h3>
+                    <p>The best way to run MongoDB yourself. Drive operational efficiency and security.</p>
+                    <a href="">Learn more > </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- This is the code section --}}
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 div4 pt-5 pb-5">
+                    <div class="col-md-8 p-5">
+                        <h2>Built by developers, for developers</h2>
+                        <p>With a document data model that maps a how developers think and code and a powerful, unified
+                            query API, MongoDB powers faster, more flexible application development.</p>
+                        <button class="btn btn-success">View Documentation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    {{!-- This is the another middle text div --}}
+    <section>
+        <div class="container-fluid div5">
+            <div class="row text-center div-center p-5">
+                <div class="col-lg-8 col-md-8">
+                    <h3>Data solutions tailored for your business</h3>
+                    <p>Whether you're pushing the boundaries of customer experience or building mission-critical
+                        applications, MongoDB is the data foundation for any industry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- This is the another another middle section --}}
+    <section>
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <p>FINANCIAL SERVICES</p>
+                        <h3>De-risk your modernization journey</h3>
+                        <p>Iterative modernization enables financial firms to innovate while modernizing - with
+                            immediate gains and less risk.</p>
+                        <button class="btn btn-outline-success">Learn More</button>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    {{!-- This is the lower divs --}}
+    <section>
+        <div class="container-fluid">
+            <div class="row div-center p-5">
+                <div class="col-lg-5 col-md-4 div6">
+                    <img src="" alt="">
+                    <h3>Use cases</h3>
+                    <p>From legacy modernization to IOT data to single view, learn how you can use MongoDB.</p>
+                    <a href="">View all use cases - </a>
+                </div>
+                <div class="col-lg-5 col-md-4 div6">
+                    <img src="" alt="">
+                    <h3>Industries</h3>
+                    <p>MongoDB helps remove barriers to innovation for organizations in any industry.</p>
+                    <a href="">View our solutions - </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- This is the footer up --}}
+    <section>
+        <div class="container-fluid">
+            <div class="row div7">
+                <div class="col-md-6">
+                    <h3>Ready to get started?</h3>
+                    <p>Begin building your next app today</p>
+                    <div class="col">
+                        <button class="btn btn-lg btn-success m-3">Try Free</button>
+                        <a href="">Questions? Talk to us > </a>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- This is the footer --}}
+    {{>footer data=footer}}
+
+
+    <script src="https://kit.fontawesome.com/bbfa8b511e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

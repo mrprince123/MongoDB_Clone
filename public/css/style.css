@@ -1,0 +1,73 @@
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.home-page {
+    background-color: darkgreen;
+}
+
+.text-mid-center {
+    width: 50%;
+    margin: auto;
+    line-height: 2.2;
+}
+
+.red {
+    background-color: red;
+    height: 100px;
+}
+
+.div2 {
+    margin: auto;
+}
+
+.div3 {
+    line-height: 2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 20px;
+    box-shadow: 2px;
+}
+
+.div4 {
+    background-color: darkgreen;
+    padding: 20px;
+    line-height: 2;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.div5 {
+    margin: auto;
+}
+
+.div6 {
+    border: 1px solid gray;
+    border-radius: 20px;
+    line-height: 2;
+    padding: 50px;
+    margin: 20px;
+}
+
+.div7 {
+    background-color: darkgreen;
+    padding: 50px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.green-background{
+    background-color: darkgreen;
+}
+
+.div-center{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
