@@ -50,15 +50,14 @@ mongoose.connect("mongodb+srv://Prince123:Prince123@cluster0.flkt2.mongodb.net/M
     //         brandUrlIcon: "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-filled-tal-revivo.png"
     //     }
     // ]);
-    
+
 });
 
-// let port = process.env.PORT;
-// if (port == null || port == "") {
-//     port = 3000;
-// }
-// app.listen(port);
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("Server has started Successfully");
 });
