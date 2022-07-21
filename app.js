@@ -20,9 +20,7 @@ app.set('views', 'views');
 hbs.registerPartials("views/partials");
 
 
-app.get("/", function (req, res) {
 
-});
 // mongoose.connect("mongodb://localhost/MongoDB_Clone", function () {
 mongoose.connect("mongodb+srv://Prince123:Prince123@cluster0.flkt2.mongodb.net/MongoDB_Clone", function () {
     console.log("Database is connected");
@@ -57,7 +55,6 @@ let port = process.env.PORT;
 if (port == null || port == "") {
     port = 3000;
 }
-
-app.listen(port, function () {
+app.listen(3000, function () {
     console.log("Server has started Successfully");
 });
